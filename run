@@ -20,19 +20,19 @@ cp AsciiArterConsole ../
 cd ..
 
 # Convert Edge to Ascii Arter
-AsciiArterConsole Edge.png art.txt 78
+./AsciiArterConsole Edge.png art.txt 78
 
 # Show art as text
 cat art.txt
 
 # Show art by cowsay
-cat art.txt | cowsay
+cat art.txt | cowsay -n
 
 # Create cowfile
 echo "$the_cow = <<\"EOC\";" > art.cow
 echo "  $thoughts" >> art.cow
 echo "   $thoughts >> art.cow
-cat art.txt >> artc.ow
+cat art.txt >> art.cow
 echo "EOC" >> art.cow
 
 # Show cowfile
