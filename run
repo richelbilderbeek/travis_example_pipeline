@@ -29,9 +29,9 @@ cat art.txt
 cat art.txt | cowsay -n
 
 # Create cowfile
-echo "$the_cow = <<\"EOC\";" > art.cow
-echo "  $thoughts" >> art.cow
-echo "   $thoughts >> art.cow
+echo "\$the_cow = <<\"EOC\";" > art.cow
+echo "  \$thoughts" >> art.cow
+echo "   \$thoughts" >> art.cow
 cat art.txt >> art.cow
 echo "EOC" >> art.cow
 
