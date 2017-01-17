@@ -19,14 +19,8 @@ make debug
 cp AsciiArterConsole ../
 cd ..
 
-# Convert Edge to Ascii Arter
+# Convert Edge to ascii art
 ./AsciiArterConsole Edge.png art.txt 78
-
-# Show art as text
-cat art.txt
-
-# Show art by cowsay
-cat art.txt | cowsay -n
 
 # Create cowfile
 echo "\$the_cow = <<\"EOC\";" > art.cow
@@ -35,5 +29,5 @@ echo "   \$thoughts" >> art.cow
 cat art.txt >> art.cow
 echo "EOC" >> art.cow
 
-# Show cowfile
-cowsay -f ./art.cow "Hello"
+# Use cowfile
+cowsay -f ./art.cow "Hello!"
