@@ -24,3 +24,13 @@ cat art.txt
 
 # Show art by cowsay
 cat art.txt | cowsay
+
+# Create cowfile
+echo "$the_cow = <<\"EOC\";" > art.cow
+echo "  $thoughts" >> art.cow
+echo "   $thoughts >> art.cow
+cat art.txt >> artc.ow
+echo "EOC" >> art.cow
+
+# Show cowfile
+cowsay -f ./art.cow "Hello"
