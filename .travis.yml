@@ -7,6 +7,4 @@ install:
 
 script: 
   # Remove all images to see if they are re-created
-  - rm *.png
   - ./run
-  - ls *.png
