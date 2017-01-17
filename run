@@ -10,6 +10,7 @@ convert Lenna.png -charcoal 1 Edge.png
 git clone https://github.com/richelbilderbeek/AsciiArter
 git clone https://github.com/richelbilderbeek/DotMatrix
 git clone https://github.com/richelbilderbeek/RibiClasses
+git clone https://github.com/richelbilderbeek/RibiLibraries
 
 # Build AsciiArter
 cd AsciiArter
