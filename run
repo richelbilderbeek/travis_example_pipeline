@@ -6,8 +6,10 @@ wget https://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
 # Convert to edge detected version
 convert Lenna.png -charcoal 1 Edge.png
 
-# Download AsciiArter
+# Download prerequisites
 git clone https://github.com/richelbilderbeek/AsciiArter
+git clone https://github.com/richelbilderbeek/DotMatrix
+git clone https://github.com/richelbilderbeek/RibiClasses
 
 # Build AsciiArter
 cd AsciiArter
