@@ -5,3 +5,22 @@ wget https://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
 
 # Convert to edge detected version
 convert Lenna.png -charcoal 1 Edge.png
+
+# Download AsciiArter
+git clone https://github.com/richelbilderbeek/AsciiArter
+
+# Build AsciiArter
+cd AsciiArter
+qmake AsciiArterConsole.pro
+make debug
+cp AsciiArterConsole ../
+cd ..
+
+# Convert Edge to Ascii Arter
+AsciiArterConsole Edge.png art.txt 78
+
+# Show art as text
+cat art.txt
+
+# Show art by cowsay
+cat art.txt | cowsay
